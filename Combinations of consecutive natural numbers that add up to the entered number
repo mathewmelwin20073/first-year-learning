@@ -1,0 +1,5 @@
+import java.uti.*;
+public class Combi
+{
+  public static void main()
+  {
