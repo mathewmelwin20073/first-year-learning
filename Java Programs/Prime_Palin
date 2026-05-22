@@ -1,0 +1,36 @@
+import java.util.*;
+public class Prime_Palin
+{
+    public static void main(String args[])
+    {
+        Scanner sc= new Scanner(System.in);
+        int d,i,k,r,n,p,m,a,j;
+        System.out.println("Enter the values of m and n respectively");
+        m=sc.nextInt();
+        n=sc.nextInt();
+        System.out.println("Prime Palindrome numbers between "+m" and "+n" are:");
+        for(i=0;i<=n;i++)
+           {
+            a=i;r=0;
+            p=i;k=0;
+            do
+            {
+                d=a%10;
+                r=r*10+d;
+                a=a/10;
+            }
+            while(a!=0)
+                if(r==p)
+                {
+                 for(j=1;j<=p;j++)
+                 {
+                    if(p%j==0)
+                        k=k+1;
+                 } 
+                 if(k==2)
+                  System.out.print(p+",");  
+                  k=0;
+                }
+           }
+    }
+}
